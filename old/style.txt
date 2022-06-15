@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html id="SMP_STYLE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>ICYEジャパン：申込済み詳細</title>
+
+<style type="text/css">
+<!--
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+#SMP_STYLE .body {
+	margin: 0;
+	padding: 0;
+	background: #f4f4f4;
+	font-size: 13px;
+	*font-size: small;
+	*font: x-small;
+	font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+#SMP_STYLE .body_tbl {
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	border: 1px solid #999999;
+	background: #FFFFFF;
+}
+#SMP_STYLE h1 {
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	background: #E11E1E;
+	color: #FFFFFF;
+	font-size: 153.9%;
+	text-align: center;
+}
+#SMP_STYLE .header_img_smartphone {display: none;}
+#SMP_STYLE .header_img_tablet {display: none;}
+#SMP_STYLE .header_img_pc {display: block;}
+#SMP_STYLE .header_text {
+	margin: 0;
+	padding: 20px 70px 20px 70px;
+	background: #F1F1F1;
+	color: #111111;
+	font-size: 100%;
+	font-weight: normal;
+	text-align: left;
+}
+#SMP_STYLE .header_rmesg {
+	margin: 0;
+	padding: 30px 70px 10px 70px;
+	color: #111111;
+	font-size: 100%;
+	font-weight: normal;
+	text-align: left;
+}
+#SMP_STYLE .header_emesg {
+	width: 720px;
+	margin: 30px auto;
+	padding: 20px 20px 20px 20px;
+	border: 2px solid #FF0000;
+	color: #FF0000;
+	font-size: 100%;
+	font-weight: normal;
+	text-align: left;
+}
+#SMP_STYLE .smp_tmpl {
+	width: 760px;
+	padding: 20px 0 0 0;
+	margin: 0 70px;
+}
+#SMP_STYLE input.submit {
+	width: 270px;
+	height: 42px;
+	margin: 40px 0 40px 0;
+	border: hidden;
+	border-radius: 3px 3px 3px 3px;
+	/* other browser */
+	background: #E11E1E;
+	/* for old webkit */
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		color-stop(0.00, #E11E1E),
+		color-stop(1.00, #E11E1E)
+	);
+	/* for modern browser */
+	background: linear-gradient(
+		to bottom,
+		#E11E1E 0%,
+		#E11E1E 100%
+	);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	font-size: 153.9%;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+
+#SMP_STYLE input.submit:hover {
+	filter: alpha(opacity=90);
+	-ms-filter: alpha(opacity=90);
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+#SMP_STYLE input.image {
+	margin: 40px 0 40px 0;
+	width: auto;
+	border: none;
+	padding: 0;
+	vertical-align: middle;
+}
+
+#SMP_STYLE .msg {
+	display: block;
+	color: #DD0000;
+	font-size: 100%;
+	margin-bottom: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+#SMP_STYLE .spiralSeal {
+	display: none;
+	width: 80%;
+	overflow: hidden;
+	margin: 0;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+#SMP_STYLE .spiralSeal tr td.description {
+	display: table-cell;
+	text-align: left;
+	overflow: auto;
+}
+
+#SMP_STYLE .spiralSeal tr td.img {
+	display: table-cell;
+	margin-left: 0px;
+	margin-right: 0px;
+	overflow: auto;
+	text-align: center;
+}
+
+#SMP_STYLE .footer_text {
+	width: 760px;
+	font-size: 100%;
+	margin: 30px 0 0 0;
+	font-weight: normal;
+	text-align: left;
+}
+#SMP_STYLE .cf:before,#SMP_STYLE .cf:after {content:"";display:table;}
+#SMP_STYLE .cf:after {clear:both;}
+#SMP_STYLE .cf {*zoom:1;}
+
+#SMP_STYLE input.searchZipcode {
+	width: 150px;
+	height: 32px;
+	margin: auto;
+	border: hidden;
+	border-radius: 3px 3px 3px 3px;
+	/* other browser */
+	background: #303030;
+	/* for old webkit */
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		color-stop(0.00, #555555),
+		color-stop(1.00, #303030)
+	);
+	/* for modern browser */
+	background: linear-gradient(
+		to bottom,
+		#555555 0%,
+		#303030 100%
+	);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	font-size: 153.9%;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+
+#SMP_STYLE input.searchZipcode:hover {
+	filter: alpha(opacity=90);
+	-ms-filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+#SMP_STYLE input.imageZipcode {
+	margin: auto;
+	width: auto;
+	border: none;
+	padding: 0;
+	vertical-align: middle;
+}
+
+#SMP_STYLE .smp-card-list {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #999999;
+	margin: auto;
+}
+#SMP_STYLE .smp-card-list th {
+	background-color: #DEDEDE;
+	border: 1px solid #999999;
+	padding: 5px;
+	width: 35%;
+	font-size: 13px;
+	text-align: left;
+}
+#SMP_STYLE .smp-card-list td {
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	padding: 5px;
+	width: 65%;
+	font-size: 13px;
+	text-align: left;
+}
+
+/*単票内一覧表CSS*/
+#SMP_STYLE .smp-search-form {
+	padding: 20px 20px 5px 20px;
+}
+#SMP_STYLE .smp-search-form div {
+	padding: 1px;
+}
+#SMP_STYLE .smp-search-form-table {}
+#SMP_STYLE .smp-pager a {
+	color: #8080FF;
+	font-weight: bold;
+	padding: 1px 5px;
+	text-decoration: none;
+}
+#SMP_STYLE .smp-table {
+	width: 100%;
+	margin: 0;
+}
+#SMP_STYLE .smp-page {
+	background-color: #FFFFFF;
+	text-align: center;
+	width: 15px;
+	padding: 0px;
+	margin: 0px;
+}
+#SMP_STYLE .smp-current-page {
+	color: #202020;
+	font-weight: bold;
+	padding: 0px 2px;
+}
+#SMP_STYLE .smp-page a {
+	border: 1px solid #aaaaaa;
+	color: #606060;
+	height: 1.4em;
+	font-size: 90%;
+}
+#SMP_STYLE .smp-page a:hover {
+	background-color: #909090;
+	color: #FFFFFF;
+	border: 1px solid #333333;
+	font-size: 90%;
+}
+#SMP_STYLE .smp-page-space {
+	border: 0px;
+}
+#SMP_STYLE .smp-cell-sort a {
+	color: #FFFFFF;
+}
+#smp-table-update-button {
+	width: 70px;
+}
+#smp-table-reset-button {
+	width: 70px;
+}
+#SMP_STYLE tr.smp-be-operate td.smp-cell-data {
+	background-color: #CCFFCC !important;
+}
+#SMP_STYLE tr.smp-valid-err-row td.smp-cell-data {
+	background-color: #FFF099;
+}
+#SMP_STYLE .smp-valid-err-input {
+	background-color: #FF9663;
+}
+#SMP_STYLE .smp-cell-col-2 {
+	word-break: break-all;
+}
+
+@media screen and (min-width:726px) and (max-width:981px) {
+	#SMP_STYLE .body {
+		margin: 0;
+		padding: 0;
+		font-size: 13px;
+		*font-size: small;
+		*font: x-small;
+		font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+		background: #FFFFFF;
+	}
+	#SMP_STYLE .body_tbl {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0 30px 0;
+		border: none;
+		background: #FFFFFF;
+	}
+	#SMP_STYLE h1 {
+		margin: 0;
+		padding: 10px 10px 10px 10px;
+		background: #E11E1E;
+		color: #FFFFFF;
+		font-size: 153.9%;
+		text-align: center;
+	}
+	#SMP_STYLE .header_img_smartphone {display: none;}
+	#SMP_STYLE .header_img_tablet {display: block;}
+	#SMP_STYLE .header_img_pc {display: none;}
+	#SMP_STYLE .header_text {
+		margin: 0;
+		padding: 15px 70px 15px 70px;
+		background: #F1F1F1;
+		color: #111111;
+		font-size: 93%;
+		font-weight: normal;
+		text-align: left;
+	}
+	#SMP_STYLE .header_rmesg {
+		margin: 0;
+		padding: 30px 70px 10px 70px;
+		color: #111111;
+		font-size: 100%;
+		font-weight: normal;
+		text-align: left;
+	}
+	#SMP_STYLE .header_emesg {
+		width: 80%;
+		margin: 30px auto 10px;
+		padding: 15px 15px 15px 15px;
+		border: 2px solid #FF0000;
+		color: #FF0000;
+		font-size: 100%;
+		font-weight: normal;
+		text-align: left;
+	}
+	#SMP_STYLE .smp_tmpl {
+		width: 80%;
+		margin: 20px auto 0;
+		padding: 20px 0 0 0;
+	}
+	#SMP_STYLE input.submit {
+		width: 40%;
+		height: 42px;
+		margin: 40px 0 40px 0;
+		border: hidden;
+		border-radius: 3px 3px 3px 3px;
+		/* other browser */
+		background: #E11E1E;
+		/* for old webkit */
+		background: -webkit-gradient(
+			linear, left top, left bottom,
+			color-stop(0.00, #E11E1E),
+			color-stop(1.00, #E11E1E)
+		);
+		/* for modern browser */
+		background: linear-gradient(
+			to bottom,
+			#E11E1E 0%,
+			#E11E1E 100%
+		);
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+		color: #FFFFFF;
+		font-size: 153.9%;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	#SMP_STYLE input.submit:hover {
+		filter: alpha(opacity=90);
+		-ms-filter: alpha(opacity=90);
+		opacity: 0.8;
+		transition: 0.5s;
+	}
+
+	#SMP_STYLE input.image {
+		margin: 40px 0 40px 0;
+		width: auto;
+		border: none;
+		padding: 0;
+		vertical-align: middle;
+	}
+
+	#SMP_STYLE .msg {
+		display: block;
+		color: #DD0000;
+		font-size: 100%;
+		margin-bottom: 5px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	#SMP_STYLE .spiralSeal {
+		display: none;
+		width: 80%;
+		overflow: hidden;
+		margin: 0;
+		background-color: #FFFFFF;
+		border: 1px solid #CCCCCC;
+	}
+	#SMP_STYLE .spiralSeal tr td.description {
+		display: table-cell;
+		text-align: left;
+		overflow: auto;
+	}
+
+	#SMP_STYLE .spiralSeal tr td.img {
+		display: table-cell;
+		margin-left: 0px;
+		margin-right: 0px;
+		overflow: auto;
+		text-align: center;
+	}
+
+	#SMP_STYLE .footer_text {
+		width: 80%;
+		font-size: 93%;
+		margin: 30px 0 0 0;
+		font-weight: normal;
+		text-align: left;
+	}
+	#SMP_STYLE .cf:before,#SMP_STYLE .cf:after {content:"";display:table;}
+	#SMP_STYLE .cf:after {clear:both;}
+	#SMP_STYLE .cf {*zoom:1;}
+
+	#SMP_STYLE input.searchZipcode {
+		width: 40%;
+		height: 32px;
+		margin: auto;
+		border: hidden;
+		border-radius: 3px 3px 3px 3px;
+		/* other browser */
+		background: #303030;
+		/* for old webkit */
+		background: -webkit-gradient(
+			linear, left top, left bottom,
+			color-stop(0.00, #555555),
+			color-stop(1.00, #303030)
+		);
+		/* for modern browser */
+		background: linear-gradient(
+			to bottom,
+			#555555 0%,
+			#303030 100%
+		);
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+		color: #FFFFFF;
+		font-size: 153.9%;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	#SMP_STYLE input.searchZipcode:hover {
+		filter: alpha(opacity=90);
+		-ms-filter: alpha(opacity=90);
+		opacity: 0.9;
+	}
+
+	#SMP_STYLE input.imageZipcode {
+		margin: auto;
+		width: auto;
+		border: none;
+		padding: 0;
+		vertical-align: middle;
+	}
+
+	#SMP_STYLE .smp-card-list th {
+		width: 40%;
+	}
+	#SMP_STYLE .smp-card-list td {
+		width: 60%;
+	}
+
+}@media screen and (max-width:725px) {
+	#SMP_STYLE .body {
+		margin: 0;
+		padding: 0;
+		font-size: 13px;
+		*font-size: small;
+		*font: x-small;
+		font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+		background: #FFFFFF;
+	}
+	#SMP_STYLE .body_tbl {
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		border: none;
+		background: #FFFFFF;
+	}
+	#SMP_STYLE h1 {
+		margin: 0;
+		padding: 10px 10px 10px 10px;
+		background: #E11E1E;
+		color: #FFFFFF;
+		font-size: 153.9%;
+		text-align: center;
+	}
+	#SMP_STYLE .header_img_smartphone {display: block;}
+	#SMP_STYLE .header_img_tablet {display: none;}
+	#SMP_STYLE .header_img_pc {display: none;}
+	#SMP_STYLE .header_text {
+		margin: 0;
+		padding: 15px 15px 15px 15px;
+		background: #F1F1F1;
+		color: #111111;
+		font-size: 85%;
+		font-weight: normal;
+		text-align: left;
+	}
+	#SMP_STYLE .header_rmesg {
+		margin: 0 0 0 0;
+		padding: 30px 15px 10px 15px;
+		color: #111111;
+		font-size: 100%;
+		font-weight: normal;
+		text-align: left;
+	}
+	#SMP_STYLE .header_emesg {
+		width: 240px;
+		margin: 10px auto 10px;
+		padding: 15px 15px 15px 15px;
+		border: 2px solid #FF0000;
+		color: #FF0000;
+		font-size: 100%;
+		font-weight: normal;
+		text-align: left;
+	}
+	#SMP_STYLE .smp_tmpl {
+		width: 300px;
+		margin: 0 auto;
+		padding-top: 20px 0 0 0;
+	}
+
+	#SMP_STYLE input.submit {
+		width: 150px;
+		height: 42px;
+		margin: 20px 0 40px 0;
+		border: hidden;
+		border-radius: 3px 3px 3px 3px;
+		/* other browser */
+		background: #E11E1E;
+		/* for old webkit */
+		background: -webkit-gradient(
+			linear, left top, left bottom,
+			color-stop(0.00, #E11E1E),
+			color-stop(1.00, #E11E1E)
+		);
+		/* for modern browser */
+		background: linear-gradient(
+			to bottom,
+			#E11E1E 0%,
+			#E11E1E 100%
+		);
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+		color: #FFFFFF;
+		font-size: 153.9%;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	#SMP_STYLE input.submit:hover {
+		filter: alpha(opacity=90);
+		-ms-filter: alpha(opacity=90);
+		opacity: 0.8;
+		transition: 0.5s;
+	}
+
+	#SMP_STYLE input.image {
+		margin: 40px 0 40px 0;
+		width: auto;
+		border: none;
+		padding: 0;
+		vertical-align: middle;
+	}
+
+	#SMP_STYLE .msg {
+		display: block;
+		color: #DD0000;
+		font-size: 100%;
+		margin-bottom: 5px;
+		font-weight: bold;
+		text-align: left;
+	}
+	#SMP_STYLE .spiralSeal {
+		display: none;
+		width: 270px;
+		overflow: hidden;
+		margin: 0;
+		background-color: #FFFFFF;
+		border: 1px solid #CCCCCC;
+	}
+	#SMP_STYLE .spiralSeal tr td.description {
+		display: block;
+		text-align: left;
+		overflow: auto;
+	}
+
+	#SMP_STYLE .spiralSeal tr td.img {
+		display: block;
+		margin-left: 60px;
+		margin-right: 60px;
+		overflow: auto;
+		text-align: center;
+	}
+
+	#SMP_STYLE .footer_text {
+		width: 270px;
+		font-size: 85%;
+		margin: 30px 0 0 0;
+		font-weight: normal;
+		text-align: left;
+	}
+	#SMP_STYLE .cf:before,#SMP_STYLE .cf:after {content:"";display:table;}
+	#SMP_STYLE .cf:after {clear:both;}
+	#SMP_STYLE .cf {*zoom:1;}
+
+	#SMP_STYLE input.searchZipcode {
+		width: 150px;
+		height: 32px;
+		margin: auto;
+		border: hidden;
+		border-radius: 3px 3px 3px 3px;
+		/* other browser */
+		background: #303030;
+		/* for old webkit */
+		background: -webkit-gradient(
+			linear, left top, left bottom,
+			color-stop(0.00, #555555),
+			color-stop(1.00, #303030)
+		);
+		/* for modern browser */
+		background: linear-gradient(
+			to bottom,
+			#555555 0%,
+			#303030 100%
+		);
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+		color: #FFFFFF;
+		font-size: 153.9%;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	#SMP_STYLE input.searchZipcode:hover {
+		filter: alpha(opacity=90);
+		-ms-filter: alpha(opacity=90);
+		opacity: 0.9;
+	}
+
+	#SMP_STYLE input.imageZipcode {
+		margin: auto;
+		width: auto;
+		border: none;
+		padding: 0;
+		vertical-align: middle;
+	}
+
+	#SMP_STYLE .smp-card-list th {
+		width: 35%;
+	}
+	#SMP_STYLE .smp-card-list td {
+		width: 65%;
+	}
+
+}
+
+-->
+</style>
+<style>
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+/* 一覧CSS */
+
+/* 検索フォームの全体 */
+.smp-search-form {
+	display: block;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+/* 検索フォーム*/
+.smp-search-form-table {
+	max-width: 90%;
+	margin: auto !important;
+}
+
+/* スパイラル検索フォームのタイトル部分 */
+.smp-sf-head {
+	font-size: 100% !important;
+	color: #FFF !important;
+	font-weight: normal !important;
+	background-color: #E11E1E !important;
+	border: 1px solid #ccc !important;
+	padding: 7px 7px 7px 12px !important;
+	width: 180px !important;
+	height: 25px !important;
+}
+
+/* スパイラル検索フォームの入力欄の部分 */
+.smp-sf-body {
+	border: 1px solid #ccc !important;
+	text-align: left !important;
+	padding: 7px 27px 7px 12px !important;
+	font-size: 100% !important;
+	width: 560px !important;
+}
+
+/* 検索フォームチェックボックス */
+input[type="checkBox"] {
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+
+/* 検索フォームテキスト */
+input[type="text"] {
+	font-size: 110%;
+	/* width: 80% !important; */
+	height: 30px;
+	color: #555;
+	padding: 0px 12px 0px 8px;
+	border-radius: 4px;
+	border: solid 1px #BDBDBD;
+	margin-bottom: 6px;
+}
+input[type="text"]:focus,
+texture:focus {
+	box-shadow: 0 0 8px #66ccff;
+	border: 1px solid #66ccff !important;
+}
+
+/* 件数セレクト */
+.smp-row-normal select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 90px;
+	height: 30px;
+	background: transparent;
+	cursor: pointer;
+	z-index: 1;
+	padding: 0px 0 0px 8px;
+	border: 1px solid	#ccc;
+	border-radius: 1px;
+	font-size: 100%;
+	color: #555;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.smp-row-normal select:-ms-expand {
+	display: none;
+}
+
+/* 表示ボタン */
+input[name="smp-table-submit-button"] {
+	-webkit-appearance: none;
+	border: none;
+	background-color: none;
+	display: inline-block;
+	padding: 3px 10px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	border: solid 2px #E11E1E;
+	border-radius: 5px;
+	transition: .4s;
+	background-color: #E11E1E;
+	width: 70px;
+	height: 30px;
+	font-size: 110%;
+}
+input[name="smp-table-submit-button"]:hover {
+	filter: alpha(opacity=90);
+	-ms-filter: alpha(opacity=90);
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+/* 検索ボタン */
+.smp-sf-row input[type="submit"] {
+	-webkit-appearance: none;
+	border: none;
+	background-color: none;
+	display: inline-block;
+	padding: 3px 20px;
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	border: solid 2px #E11E1E;
+	border-radius: 5px;
+	transition: .4s;
+	background-color: #E11E1E;
+	width: 100px;
+	height: 40px;
+	font-size: 130%;
+	margin: 20px 0 0 !important;
+}
+.smp-sf-row input[type="submit"]:hover {
+	filter: alpha(opacity=90);
+	-ms-filter: alpha(opacity=90);
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+/* 一覧表 */
+.smp-table {
+	width: 90%;
+	margin: auto !important;
+}
+
+colgroup col {
+	display: table-column;
+}
+
+/* ページャーデザイン */
+.smp-page {
+	width: 40px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #E11E1E;
+	border-radius: 2px;
+	text-decoration:none;
+}
+.smp-current-page {
+	width: 40px;
+	background-color: #E11E1E;
+	border-radius: 2px;
+	text-decoration:none;
+	color: #FFF;
+}
+.smp-page-space {
+	width: 25px;
+	border: none;
+}
+.smp-page:hover {
+	background-color: #E11E1E;
+}
+.smp-page:hover > a {
+	color: #FFF;
+}
+.smp-page-space:hover {
+	width: 25px;
+	border: none;
+	background-color: #FFF;
+}
+/* ページャーのリンクの色 */
+td.smp-page > a {
+	display: block;
+	padding: 8px 0;
+	color: #E11E1E;
+	text-decoration:none;
+}
+
+/* 一覧表の見出しの色 */
+td.smp-cell-sort {
+	margin-top: 20px !important;
+	background: #E11E1E !important;
+	border: 1px solid #ccc !important;
+}
+
+/* 一覧表の見出しの色 リンク */
+tr.smp-row-3 > td > a {
+	color: #FFF;
+	font-weight: normal;
+	font-size: 114%;
+	text-decoration: underline;
+}
+tr.smp-row-3 td a:hover {
+	color: #FFF;
+	font-weight: normal;
+	font-size: 114%;
+	text-decoration: underline;
+}
+
+/* 一覧表データ */
+td.smp-cell-data {
+	font-size: 100% !important;
+	border: 1px solid #ccc !important;
+	color: #555;
+}
+
+/* 一覧表データのリンクの色 */
+td.smp-cell-data > a {
+	color: #555;
+	text-decoration: underline;
+}
+td.smp-cell-data a:hover {
+	color: #0033cc;
+	text-decoration: underline;
+}
+
+/* 検索条件追加ラベルのデザイン */
+.search_label {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background-color: #E11E1E;
+	width: 130px;
+	margin: 20px auto 0px auto;
+	padding : 6px 12px;
+	font-weight: normal;
+	color: #fff;
+	border: solid 2px #E11E1E;
+	border-radius: 5px;
+	transition: .4s;
+	cursor :pointer;
+}
+.search_label:hover {
+	filter: alpha(opacity=90);
+	-ms-filter: alpha(opacity=90);
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+
+/* 画面の横幅が725px以下の場合 */
+@media screen and (max-width:725px) {
+	/* 一覧CSS */
+
+	/* 検索フォームの全体 */
+	.smp-search-form {
+		display: block;
+		margin-top: 10px !important;
+		margin-bottom: 70px !important;
+	}
+
+	/* 検索フォーム*/
+	.smp-search-form-table {
+		width: 90%;
+		margin: auto !important;
+	}
+
+	/* スパイラル検索フォームのタイトル部分 */
+	.smp-sf-head {
+		display: block !important;
+		font-size: 100% !important;
+		color: #FFF !important;
+		font-weight: normal !important;
+		background-color: #E11E1E !important;
+		border: none !important;
+		padding: 7px 0px 7px 0px !important;
+		width: 100% !important;
+		height: 25px !important;
+	}
+
+	/* スパイラル検索フォームの入力欄の部分 */
+	.smp-sf-body {
+		display: block !important;
+		border: none !important;
+		text-align: left !important;
+		padding: 7px 0px 7px 0px !important;
+		font-size: 100% !important;
+		width: 100% !important;
+	}
+
+	/* 検索フォームチェックボックスのマージン設定 */
+	input[type="checkBox"] {
+		margin: 3px 3px 5px 0px !important;
+	}
+	.smp-search-form-table span {
+		margin-left: 15px;
+		margin-right: 5px;
+	}
+
+	/* 検索フォームテキスト */
+	input[type="text"] {
+		font-size: 110%;
+		width: 75% !important;
+		height: 30px;
+		color: #555;
+		padding: 0px 6px 0px 6px;
+		border-radius: 4px;
+		border: solid 1px #BDBDBD;
+		margin: 0px 0px 6px 15px;
+	}
+	input[type="text"]:focus,
+	texture:focus {
+		box-shadow: 0 0 8px #66ccff;
+		border: 1px solid #66ccff !important;
+	}
+
+	/* 検索ボタン */
+	.smp-sf-row input[type="submit"] {
+		display: block !important;
+		text-decoration: none;
+		cursor: pointer;
+		color: #fff;
+		border: solid 2px #E11E1E;
+		border-radius: 5px;
+		transition: .4s;
+		background-color: #E11E1E;
+		width: 95%;
+		height: 40px;
+		font-size: 130%;
+		margin: 0px 0px 10px 0px !important;
+	}
+
+	/* カーソルを乗せたとき */
+	.smp-sf-row input[type="submit"]:hover {
+		filter: alpha(opacity=90);
+		-ms-filter: alpha(opacity=90);
+		opacity: 0.8;
+		transition: 0.5s;
+	}
+
+	/* 空白セルの調整 */
+	.smp-row-normal {
+		display: block !important;
+	}
+
+	.smp-row-sort {
+		display: block !important;
+	}
+
+	/* 件数外枠 */
+	td.smp-cell-1-6 {
+		display: block;
+		width: 100%;
+	}
+
+	/* 件数セレクト */
+	.smp-row-normal select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		width: 90px;
+		height: 30px;
+		background: transparent;
+		cursor: pointer;
+		z-index: 1;
+		padding: 0px 0 0px 8px;
+		border: 1px solid	#ccc;
+		border-radius: 1px;
+		font-size: 100%;
+		color: #555;
+		margin: 0px 15px 15px 20px;
+	}
+	.smp-row-normal select:-ms-expand {
+		display: none;
+	}
+
+	/* 表示ボタン */
+	input[name="smp-table-submit-button"] {
+		padding: 3px 10px;
+		margin: 5px 0px 10px 0px;
+		text-decoration: none;
+		cursor: pointer;
+		color: #fff;
+		border: solid 2px #E11E1E;
+		border-radius: 5px;
+		transition: .4s;
+		background-color: #E11E1E;
+		width: 70px;
+		height: 30px;
+		font-size: 110%;
+	}
+
+	/* 表示ボタン カーソルを乗せたとき */
+	input[name="smp-table-submit-button"]:hover {
+		filter: alpha(opacity=90);
+		-ms-filter: alpha(opacity=90);
+		opacity: 0.8;
+		transition: 0.5s;
+	}
+
+	/* 一覧表 */
+	.smp-table {
+		margin: auto !important;
+		width: 95% !important;
+	}
+
+	colgroup col {
+		display: none;
+	}
+
+	/* ページャーデザイン */
+	.smp-cell-2-5 {
+		display: block;
+	}
+	.smp-cell-14-1 {
+		display: block;
+		margin-top: 10px;
+	}
+	.smp-page {
+		width: 40px;
+		text-align: center;
+		background-color: #fff;
+		border: 1px solid #E11E1E;
+		border-radius: 2px;
+		text-decoration:none;
+	}
+	.smp-current-page {
+		width: 40px;
+		background-color: #E11E1E;
+		border-radius: 2px;
+		text-decoration:none;
+		color: #FFF;
+	}
+	.smp-page-space {
+		width: 25px;
+		border: none;
+	}
+	.smp-page:hover {
+		background-color: #E11E1E;
+	}
+	.smp-page:hover > a {
+		color: #FFF;
+	}
+	.smp-page-space:hover {
+		width: 25px;
+		border: none;
+		background-color: #FFF;
+	}
+	/* ページャーのリンクの色 */
+	td.smp-page > a {
+		display: block;
+		padding: 8px 0;
+		color: #E11E1E;
+		text-decoration:none;
+	}
+
+	/* 一覧表の見出しの色 */
+	td.smp-cell-sort {
+		display: none !important;
+		margin-top: 20px !important;
+	}
+
+	/* 一覧表の見出しの色 リンク */
+	tr.smp-row-3 > td > a {
+		color: #FFF;
+		font-weight: normal;
+		font-size: 114%;
+		text-decoration: underline;
+	}
+	tr.smp-row-3 td a:hover {
+		color: #FFF;
+		font-weight: normal;
+		font-size: 114%;
+		text-decoration: underline;
+	}
+
+	/* 一覧表データ */
+	.smp-cell-4-1, .smp-cell-5-1, .smp-cell-6-1, .smp-cell-7-1, .smp-cell-8-1,
+	.smp-cell-9-1, .smp-cell-10-1, .smp-cell-11-1, .smp-cell-12-1, .smp-cell-13-1 {
+		margin-top: 10px;
+		background-color: #E11E1E !important;
+		text-align: center !important;
+		color: #FFFFFF !important;
+	}
+	td.smp-cell-data {
+		display: block !important;
+		width: 100% !important;
+		padding: 5px 0px !important;
+		font-size: 100% !important;
+		color: #555;
+		border: none !important;
+		text-align: left;
+	}
+
+	/* 一覧表データのリンクの色 */
+	td.smp-cell-data > a {
+		color: #FFF;
+		text-decoration: underline;
+	}
+	td.smp-cell-data a:hover {
+		color: #FFF;
+		text-decoration: underline;
+	}
+
+	/* 項目タイトルのデザイン */
+	.subtitle {
+		font-size: 85%;
+		margin: 5px 10px !important;
+		padding: 0px 8px;
+		color: #FFF;
+		background-color: #999;
+		border: 1px solid #999;
+		border-radius: 4px;
+	}
+
+}
+</style>
+</head>
+<body class="body">
+<center>
+
+<!-- 編集不可 start -->
+<div class="body_tbl">
+
+<!-- SMP_TEMPLATE_HEADER start -->
+	<h1>申込済み詳細</h1>
+<!-- SMP_TEMPLATE_HEADER end -->
+
+<!-- SMP_TEMPLATE_FORM start -->
+
+	<div class="smp_tmpl">
+		<table class="smp-card-list">
+			<tr>
+			<th>
+			申込日時
+			</th>
+			<td>
+			%val:usr:registDate%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			ICYEを知ったきっかけ
+			</th>
+			<td>
+			%val:usr:cue_:br%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			選んだ決め手の理由
+			</th>
+			<td>
+			%val:usr:motive:br%
+			</td>
+			</tr>
+　　　　　　　　　　　　<tr>
+			<th>
+			第一希望プログラム名
+			</th>
+			<td>
+			%val:usr:programName_1%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			決定プログラム名
+			</th>
+			<td>
+			%val:usr:programName%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			国
+			</th>
+			<td>
+			%val:usr:country%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			開始日・終了日
+			</th>
+			<td>
+			%val:usr:holding%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			会員種別
+			</th>
+			<td>
+			%val:usr:type%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			過去の海外経験
+			</th>
+			<td>
+			%val:usr:experience:br%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			ICYEプログラムに期待すること
+			</th>
+			<td>
+			%val:usr:expectation:br%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			他にも迷ったプログラム
+			</th>
+			<td>
+			%val:usr:waver:br%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			趣味・特技
+			</th>
+			<td>
+			%val:usr:speciality:br%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			資格
+			</th>
+			<td>
+			%val:usr:qualification:br%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			アレルギーなど注意が必要なこと
+			</th>
+			<td>
+			%val:usr:allergy:br%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			その他
+			</th>
+			<td>
+			%val:usr:note:br%
+			</td>
+			</tr>
+			<tr>
+			<th>
+			ステイタス
+			</th>
+			<td>
+			%val:usr:status%
+			</td>
+			</tr>
+		</table>
+
+		<input class="submit" style="width: 270px;font-size: 20px;" type="button" value="リプライする" onClick="location.href='%url/rel:mpgt:D06_change%'">
+
+		%sf:usr:L02_list:table%
+
+	</div>
+<!-- SMP_TEMPLATE_FORM end -->
+
+
+<!-- 編集不可 end -->
+
+<!-- ここから -->
+<table class="spiralSeal">
+<tr>
+<td style="font-size:11px; padding:5px;" class="description">
+ご登録される情報は、暗号化された通信(SSL)で保護され、プライバシーマークやISO27001/JIS Q 27001, ISO27017, ISO20000-1, ISO9001などの認証を取得している<a href="http://www.pi-pe.co.jp/" target="_blank" title="株式会社パイプドビッツ">株式会社パイプドビッツ</a>による<a href="https://www.pi-pe.co.jp/security/customer_db.html" target="_blank" title="データベース管理のためのASPサービス「スパイラル」">情報管理システム「スパイラル」</a>で安全に管理されます。
+</td>
+<td style="padding:5px;" class="img">
+<script type="text/javascript" src="https://reg31.smp.ne.jp/spiral/servlet/seal.Seal?_act=GetJS&amp;sid=6J_vifncpb&amp;type=send&amp;size=m&amp;lang=ja"></script>
+</td>
+</tr>
+</table>
+<!-- ここまで -->
+
+
+
+<!-- 編集不可 start -->
+
+<!-- SMP_TEMPLATE_FOOTER start -->
+<div class="footer_text"><span style="font-size: 15px;font-weight: bold;">NPO法人ICYEJAPAN</span>　〒169-0074 東京都新宿区北新宿1-7-21　高澤ビル901号室　TEL/FAX : 03-5389-5041<br><span style="color: #777;">Copyright (C) ICYE Japan. All Rights Reserved</span></div>
+<!-- SMP_TEMPLATE_FOOTER end -->
+
+</div>
+<!-- 編集不可 end -->
+
+
+</center>
+</body>
+</html>

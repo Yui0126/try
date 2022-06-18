@@ -28,8 +28,9 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    height: 70px;
     /*padding-top: 0.5rem;*/
-    padding-bottom: 0.5rem;
+    /*padding-bottom: 0.5rem;*/
 }
 
 #header-nav {
@@ -48,11 +49,11 @@ body {
 }
 
 .navbar-brand {
-    padding-top: 20px;
+    padding-top: auto;
 }
 
 .navbar-button {
-    padding-top: -10px;
+    padding-top: -20px;
 }
 
 .navbar-brand h1 {
@@ -60,7 +61,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: #5C3D2E;
-    font-size: 1em;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
     /*text-shadow: 1px 1px 1px #222;*/
@@ -1228,6 +1229,9 @@ a.nav-link:focus {
     }
     .d-xs-none {
         display: none !important;
+    }
+    .d-xs-block {
+        display: block;
     }
 }
 

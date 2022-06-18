@@ -119,6 +119,9 @@ body {
     border: 0.4px solid gray;
     margin-top: 0;
     background-color: #F4DADA;
+    position: absolute;
+    width: 100%;
+    z-index: 30;
 }
 
 .navbar-light .navbar-nav .nav-link {

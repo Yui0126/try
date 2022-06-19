@@ -3,6 +3,7 @@
 body {
     background-color: #DAEBEE;
     margin: 0;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: #5C3D2E;
@@ -24,6 +25,8 @@ body {
 
 .navbar {
     position: relative;
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -37,6 +40,8 @@ body {
     background-color: #fff !important;
     border-radius: 0;
     border: 0;
+    margin: 0;
+    width: 100%;
 }
 
 #logo-img {
@@ -46,6 +51,12 @@ body {
     background-size: cover;
     margin: 15px 5px 5px 0;
     position: relative;
+}
+
+.contents {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F4DADA;
 }
 
 .navbar-brand {
@@ -124,7 +135,7 @@ body {
     border: 0.4px solid gray;
     margin-top: 0;
     background-color: #F4DADA;
-    position: absolute;
+    /*position: absolute; this is to make the contents when opening the navbar*/
     width: 100%;
     z-index: 30;
 }
@@ -183,6 +194,13 @@ body {
 }
 
 .nav-item-2 {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-bottom: 0.4px solid gray;
+    s
+}
+
+.nav-item-3 {
     padding-top: 8px;
 }
 
@@ -221,6 +239,10 @@ a.nav-link:focus {
 
 .d-none {
     display: none !important;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 

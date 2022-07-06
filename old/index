@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My page</title>
+    <link rel="stylesheet/less" type="text/css" href="https://yui0126.github.io/HTML_CSS_Java_coursera/module3_solution/css/styles.less">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://yui0126.github.io/HTML_CSS_Java_coursera/module3_solution/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav id="header-nav" class="navbar navbar-light bg-light">
+            <div class="navbar-brand">
+                <a href="index.html" class="float-xs-start">
+                    <h1>Food, LCC</h1>
+                </a>
+            </div>
+            <div class="navbar-button float-xs-end float-sm-end d-md-none d-xs-block" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="burger two">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item nav-item-1">
+                        <a class="nav-link" href="#chicken">Chicken</a>
+                    </li>
+                    <li class="nav-item nav-item-2">
+                        <a class="nav-link" href="#beef">Beef</a>
+                    </li>
+                    <li class="nav-item nav-item-3">
+                        <a class="nav-link" href="#sushi">Sushi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- .collapse .navbar-collapse -->
+        </div>
+        </nav>
+    </header>
+    <div class="text-center">
+        <h2 id="top">Our Menu</h2>
+        <div class="contents col-md-6 col-lg-4">
+            <h3 id="chicken">Chicken</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel erat erat. Donec nec molestie nibh. Cras eros eros, eleifend at fermentum et, consectetur sit amet neque. Vivamus finibus a justo eu ultricies. Vivamus vel nulla lectus.
+            Donec arcu dolor, mattis ut fermentum quis, hendrerit eu lorem. Nulla eu mi viverra, accumsan turpis rutrum, tincidunt lectus. Pellentesque non dolor et nibh pharetra vulputate condimentum eu justo. Nulla vitae nisi eleifend, viverra nisl
+            eget, luctus lacus. Sed vitae velit commodo, pretium metus in, accumsan erat. Proin molestie congue odio sed luctus. Aliquam imperdiet lacus id dolor ultricies, a pharetra est viverra. Vivamus eget lorem maximus, maximus ipsum in, auctor lacus.
+            Integer lacinia tristique sem eu pharetra. Sed fermentum, eros ultricies scelerisque tempus, sem erat viverra leo, ut gravida est orci sit amet sem. Aliquam erat volutpat. Nunc quis est nec dolor consequat pulvinar. Aenean quis nisl fermentum,
+            iaculis lectus vel, pulvinar enim. Etiam porta lectus urna, nec auctor lacus tristique non. Aenean luctus dolor ac sem aliquet sodales. Praesent sed magna tempus felis ultrices placerat. Sed tincidunt dolor sapien. Aliquam quis commodo neque.
+            Phasellus convallis odio at quam cursus sagittis. Vestibulum in dolor ut lorem ultricies congue in nec nibh. Morbi mollis nulla a nibh imperdiet, commodo gravida nisl porta. Duis semper accumsan arcu, ac euismod ante sollicitudin sit amet.
+            Nulla tempor sapien nec risus laoreet dapibus. Proin in nulla diam. Duis dignissim vestibulum elit vel eleifend. Sed eu nunc purus. Etiam pretium eros tincidunt ante gravida consequat. <a href="#top">Back to top</a></div>
+        <div class="contents col-md-6 col-lg-4">
+            <h3 id="beef">Beef</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel erat erat. Donec nec molestie nibh. Cras eros eros, eleifend at fermentum et, consectetur sit amet neque. Vivamus finibus a justo eu ultricies. Vivamus vel nulla lectus.
+            Donec arcu dolor, mattis ut fermentum quis, hendrerit eu lorem. Nulla eu mi viverra, accumsan turpis rutrum, tincidunt lectus. Pellentesque non dolor et nibh pharetra vulputate condimentum eu justo. Nulla vitae nisi eleifend, viverra nisl
+            eget, luctus lacus. Sed vitae velit commodo, pretium metus in, accumsan erat. Proin molestie congue odio sed luctus. Aliquam imperdiet lacus id dolor ultricies, a pharetra est viverra. Vivamus eget lorem maximus, maximus ipsum in, auctor lacus.
+            Integer lacinia tristique sem eu pharetra. Sed fermentum, eros ultricies scelerisque tempus, sem erat viverra leo, ut gravida est orci sit amet sem. Aliquam erat volutpat. Nunc quis est nec dolor consequat pulvinar. Aenean quis nisl fermentum,
+            iaculis lectus vel, pulvinar enim. Etiam porta lectus urna, nec auctor lacus tristique non. Aenean luctus dolor ac sem aliquet sodales. Praesent sed magna tempus felis ultrices placerat. Sed tincidunt dolor sapien. Aliquam quis commodo neque.
+            Phasellus convallis odio at quam cursus sagittis. Vestibulum in dolor ut lorem ultricies congue in nec nibh. Morbi mollis nulla a nibh imperdiet, commodo gravida nisl porta. Duis semper accumsan arcu, ac euismod ante sollicitudin sit amet.
+            Nulla tempor sapien nec risus laoreet dapibus. Proin in nulla diam. Duis dignissim vestibulum elit vel eleifend. Sed eu nunc purus. Etiam pretium eros tincidunt ante gravida consequat. <a href="#top">Back to top</a></div>
+        <div class="contents col-md-12 col-lg-4">
+            <h3 id="sushi">Sushi</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel erat erat. Donec nec molestie nibh. Cras eros eros, eleifend at fermentum et, consectetur sit amet neque. Vivamus finibus a justo eu ultricies. Vivamus vel nulla lectus.
+            Donec arcu dolor, mattis ut fermentum quis, hendrerit eu lorem. Nulla eu mi viverra, accumsan turpis rutrum, tincidunt lectus. Pellentesque non dolor et nibh pharetra vulputate condimentum eu justo. Nulla vitae nisi eleifend, viverra nisl
+            eget, luctus lacus. Sed vitae velit commodo, pretium metus in, accumsan erat. Proin molestie congue odio sed luctus. Aliquam imperdiet lacus id dolor ultricies, a pharetra est viverra. Vivamus eget lorem maximus, maximus ipsum in, auctor lacus.
+            Integer lacinia tristique sem eu pharetra. Sed fermentum, eros ultricies scelerisque tempus, sem erat viverra leo, ut gravida est orci sit amet sem. Aliquam erat volutpat. Nunc quis est nec dolor consequat pulvinar. Aenean quis nisl fermentum,
+            iaculis lectus vel, pulvinar enim. Etiam porta lectus urna, nec auctor lacus tristique non. Aenean luctus dolor ac sem aliquet sodales. Praesent sed magna tempus felis ultrices placerat. Sed tincidunt dolor sapien. Aliquam quis commodo neque.
+            Phasellus convallis odio at quam cursus sagittis. Vestibulum in dolor ut lorem ultricies congue in nec nibh. Morbi mollis nulla a nibh imperdiet, commodo gravida nisl porta. Duis semper accumsan arcu, ac euismod ante sollicitudin sit amet.
+            Nulla tempor sapien nec risus laoreet dapibus. Proin in nulla diam. Duis dignissim vestibulum elit vel eleifend. Sed eu nunc purus. Etiam pretium eros tincidunt ante gravida consequat. <a href="#top">Back to top</a></div>
+    </div>
+
+    </div>
+
+
+
+    <!--java-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+
+
+</body>
+
+</html>

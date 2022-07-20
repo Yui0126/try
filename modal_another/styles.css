@@ -1,0 +1,8 @@
+.details {
+    background: grey;
+    display: none;
+}
+
+.show {
+    display: block;
+}

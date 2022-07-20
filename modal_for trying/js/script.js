@@ -3,19 +3,17 @@ var modalOverlay = document.getElementById("modal-overlay");
 var notScrollableModal = document.getElementById("modal-container-not-scrollable");
 var scrollableModal = document.getElementById("modal-container-scrollable");
 var modalClosebutton = document.getElementsByClassName("modal-container-close-button");
+var topBtn = document.getElementById("page-top");
+
+
 
 // create an array from the HTML button elements and add the eventListener to each item (button)
 Array.from(modalOpenButton, button => button.addEventListener("click", event => {
 
     modalOverlay.classList.add("modal-overlay-visible");
-
-    if (event.currentTarget.id === "modal-open-button-default") {
-        notScrollableModal.classList.add("modal-container-visible")
-        scrollableModal.classList.remove("modal-container-visible")
-    } else {
-        scrollableModal.classList.add("modal-container-visible")
-        notScrollableModal.classList.remove("modal-container-visible")
-    }
+    scrollableModal.classList.add("modal-container-visible");
+    notScrollableModal.classList.remove("modal-container-visible")
+    topBtn.remove();
 
 }));
 

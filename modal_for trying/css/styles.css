@@ -139,3 +139,32 @@ header {
 #modal-container-scrollable.modal-container .modal-container-content .modal-container-content-scroll::-webkit-scrollbar-thumb:hover {
     background: rgba(51, 51, 51, 1);
 }
+
+#page-top {
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    background: #E11E1E;
+    padding: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 500;
+    display: none;
+}
+
+#page-top::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    top: 20px;
+    left: 18px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    cursor: pointer;
+}

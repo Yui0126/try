@@ -70,7 +70,7 @@ header {
 }
 
 .modal-container.modal-container-visible {
-    display: block;
+    display: block !important;
 }
 
 #modal-container-not-scrollable.modal-container {

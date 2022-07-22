@@ -29,3 +29,40 @@ Array.from(modalClosebutton, button => button.addEventListener("click", closeMod
 
 // when clicking on the overlay, close the modal
 modalOverlay.addEventListener("click", closeModal);
+
+
+//some codes from the modal page
+// $(document).on("click", "button", function() {
+//     const id = $(this).data('id');
+//     $('.modal_details').removeClass('modal_show');
+//     $(`.modal_details[data-id=${id}]`).addClass('modal_show');
+// });
+
+// $('.modal-container').addClass('modal-overlay-visible');
+// $(`.modal-container-content-scroll[data-id=${id}]`).addClass('modal-container-visible');
+// });
+
+// Use event delegation to listen to events from the buttons
+// $(document).on('click', 'button', handleClick)
+
+// function handleClick() {
+
+//     // Grab the id from the button
+//     const id = $(this).data('id');
+
+//     // Remove all the `show` classes from the details elements
+//     $('.details').removeClass('show');
+
+//     // And then add that class back on to the details element
+//     // that corresponds to the id
+//     $(`.details[data-id=${id}]`).addClass('show');
+// }
+
+//original category-list
+// $(function() {
+//     $('.category-list li').click(function() {
+//         const id = $(this).data('id');
+//         $('.more_modal_details').removeClass('more_modal_show');
+//         $(`.more_modal_details[data-id=${id}]`).addClass('more_modal_show');
+//     });
+// });

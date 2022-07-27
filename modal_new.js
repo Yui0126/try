@@ -4,6 +4,7 @@
 $(function() {
     $('.category-list li').click(function() {
         const id = $(this).data('id');
+        $('#page-top').addClass('nonvisible');
         $('.modal-overlay').addClass('modal-overlay-visible');
         $('#modal-container-scrollable').addClass('modal-container-visible');
         $('.modal-container-title').addClass('modal-nonvisible');
@@ -19,6 +20,7 @@ $(function() {
 $(function() {
     $('.region-box li').click(function() {
         const id = $(this).data('id');
+        $('#page-top').addClass('nonvisible');
         $('.modal-overlay').addClass('modal-overlay-visible');
         $('#modal-container-scrollable').addClass('modal-container-visible');
         $('.modal-container-title').addClass('modal-nonvisible');
@@ -35,6 +37,8 @@ $(function() {
         $('#modal-container-scrollable').removeClass('modal-container-visible');
         $(`.modal-container-content-scroll`).removeClass('modal-visible');
         $(`.modal-container-title`).removeClass('modal-visible');
+        $('#page-top').add();
+        $('#page-top').removeClass('nonvisible');
     });
 });
 
@@ -44,5 +48,7 @@ $(function() {
         $('#modal-container-scrollable').removeClass('modal-container-visible');
         $(`.modal-container-content-scroll`).removeClass('modal-visible');
         $(`.modal-container-title`).removeClass('modal-visible');
+        $('#page-top').add();
+        $('#page-top').removeClass('nonvisible');
     });
 });

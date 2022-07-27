@@ -1,0 +1,1058 @@
+/*==========================================
+Yui from here
+===========================================*/
+
+.overview-wrapper .ml {
+    width: auto;
+    padding: 15px;
+    line-height: 180%;
+    text-align: left;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+
+/*contents table*/
+
+#page-top.nonvisible {
+    display: none !important;
+}
+
+.w300 {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.list-base {
+    text-align: center;
+    border: 0.3px solid #D6D6D6;
+    padding: 60px 20px 20px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 4px 0px 0px #D6D6D6;
+}
+
+.list-base .lists {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+.list-base ul {
+    margin-bottom: 20px !important;
+    padding-left: 30px;
+}
+
+.list-base ul li {
+    font-weight: 1.2rem;
+}
+
+.list-base ul li:before {
+    content: '-' !important;
+    color: red;
+}
+
+
+/*overview*/
+
+.shadow-base .overview-img-wrapper {
+    width: auto;
+    height: 30vh;
+    background-image: url(http://localhost/wordpress_0725/wp-content/uploads/2022/07/kenya-1.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    color: #000;
+    margin: auto;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 220px;
+    font-size: 3.5rem;
+    text-align: left;
+    display: block;
+}
+
+.overview-wrapper {
+    width: 100%;
+    background-color: #FFF;
+}
+
+.overview-wrapper .title {
+    width: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.overview-wrapper .img-wrap {
+    width: 25% !important;
+    float: none;
+    padding: 17px;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.overview-wrapper .discriptions {
+    width: 60% !important;
+    float: none;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*large screen*/
+
+@media only screen and (min-width: 997px) {}
+
+
+/*medium screen*/
+
+@media only screen and (max-width: 996px) {}
+
+
+/*small screen*/
+
+@media only screen and (max-width: 488px) {
+    .shadow-base .overview-img-wrapper {
+        padding-bottom: 10px;
+        height: 35vh;
+    }
+    .overview-wrapper .img-wrap {
+        width: 17% !important;
+        float: left;
+        padding: 5px;
+        margin-top: 15px;
+    }
+    .overview-wrapper .discriptions {
+        width: 70% !important;
+        float: left;
+        padding: 10px;
+        margin-top: 0px;
+    }
+}
+
+
+/* @media only screen and (max-width: 488px) {
+
+} */
+
+
+/*modals*/
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 501 !important;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-overlay.modal-overlay-visible {
+    display: block !important;
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 17%;
+    left: 10%;
+    z-index: 502 !important;
+    width: 80%;
+    height: 75%;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-shadow: 20px 15px 20px 0px rgb(255 255 255 / 20%);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    overflow-y: auto;
+}
+
+.modal-container.modal-container-visible {
+    display: block;
+}
+
+#modal-container-scrollable.modal-container {
+    color: black;
+    line-height: 1.5;
+}
+
+.modal-container .modal-container-title {
+    position: absolute;
+    left: 55px;
+    top: 30px;
+    font-size: 2rem;
+}
+
+.modal-container-title.modal-nonvisible {
+    display: none;
+}
+
+.modal-container-title.modal-visible {
+    display: block;
+}
+
+.modal-container .modal-container-controls {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.modal-container .modal-container-controls .modal-container-close-button {
+    background-color: red;
+    opacity: 0.5;
+    color: white;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+    border: 0px;
+}
+
+.modal-container .modal-container-controls .modal-container-close-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#modal-container-scrollable.modal-container .modal-container-content {
+    margin: 40px;
+    text-align: justify;
+}
+
+#modal-container-scrollable.modal-container .modal-container-content .modal-container-content-no-scroll {
+    margin: 10px;
+}
+
+#modal-container-scrollable.modal-container .modal-container-content .modal-container-content-scroll {
+    position: absolute;
+    width: auto;
+    height: calc(100% - 140px);
+    overflow-y: auto;
+    margin: 30px 30px 30px 15px;
+    padding: 0px 20px 0px 0px;
+}
+
+#modal-container-scrollable.modal-container .modal-container-content .modal-container-content-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+#modal-container-scrollable.modal-container .modal-container-content .modal-container-content-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px #333;
+    border-radius: 10px;
+}
+
+#modal-container-scrollable.modal-container .modal-container-content .modal-container-content-scroll::-webkit-scrollbar-thumb {
+    background: rgba(51, 51, 51, 0.7);
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+#modal-container-scrollable.modal-container .modal-container-content .modal-container-content-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(51, 51, 51, 1);
+}
+
+.modal-container-content-scroll.modal-nonvisible {
+    display: none;
+}
+
+.modal-container-content-scroll.modal-visible {
+    display: block;
+}
+
+
+/*mediaYui*/
+
+
+/*large screen*/
+
+@media only screen and (min-width: 997px) {}
+
+
+/*medium screen*/
+
+@media only screen and (max-width: 996px) {}
+
+
+/*small screen*/
+
+@media only screen and (max-width: 488px) {
+    .modal-container {
+        top: 10%;
+        left: 2%;
+        z-index: 502 !important;
+        width: 96%;
+        height: 80%;
+        justify-content: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        box-shadow: 20px 15px 20px 0px rgb(255 255 255 / 20%);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        overflow-y: auto;
+    }
+    #modal-container-scrollable.modal-container .modal-container-content .modal-container-content-scroll {
+        position: absolute;
+        width: auto;
+        height: calc(100% - 140px);
+        overflow-y: auto;
+        margin: 30px 10px 10px 10px;
+        padding: 0px 25px 0px 0px;
+    }
+}
+
+
+/*category*/
+
+.category-button {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    width: 100%;
+    text-align: left;
+}
+
+.category-button:hover {
+    border-radius: 3px;
+    background-color: #FDD5D5!important;
+}
+
+.category-list-wrapper ul.category-list {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.category-list-wrapper ul.category-list li {
+    float: left;
+    /*width: 30%;*/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    transition: all .2s linear;
+    text-decoration: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 0px 0px #CCC;
+    margin-right: 3%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-bottom: 30px !important;
+    position: relative;
+    /*min-width: 200px;*/
+}
+
+
+/*other*/
+
+.category-list-wrapper ul.category-list li img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.category-list-wrapper ul.category-list li .labeling {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0%;
+    top: 0%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.category-list-wrapper ul.category-list li:before {
+    content: none !important;
+}
+
+.category-list-wrapper ul.category-list li:hover {
+    background-color: #FDD5D5!important;
+    box-shadow: 0px 4px 0px 0px #F7B4B4!important;
+}
+
+
+/* not in use
+.category-list-wrapper ul.category-list li .contents {
+    padding-left: 15px;
+    padding-bottom: 10px;
+} */
+
+
+/*large screen*/
+
+@media only screen and (min-width: 997px) {
+    .category-list-wrapper ul.category-list {
+        float: none;
+        width: 100%;
+    }
+    .category-list-wrapper ul.category-list li:nth-child(1) {
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 1%;
+        text-align: center;
+    }
+    .category-list-wrapper ul.category-list li:nth-child(2) {
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: center;
+    }
+    .category-list-wrapper ul.category-list li:nth-child(3n) {
+        width: 30%;
+        margin-left: 2%;
+        margin-right: 1%;
+        text-align: center;
+    }
+    .category-list-wrapper ul.category-list li:nth-child(4) {
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 1%;
+        text-align: center;
+    }
+    .category-list-wrapper ul.category-list li:nth-child(5) {
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: center;
+    }
+}
+
+
+/*medium screen*/
+
+@media only screen and (max-width: 996px) {
+    .category-list-wrapper ul.category-list {
+        float: none;
+        width: 100%;
+    }
+    .category-list-wrapper ul.category-list li:nth-child(odd) {
+        width: 45.5%;
+        margin-right: 2%;
+        margin-left: 3%;
+        text-align: center;
+    }
+    .category-list-wrapper ul.category-list li:nth-child(even) {
+        width: 45.5%;
+        margin-left: 1%;
+        margin-right: 3%;
+        text-align: center;
+    }
+    .category-list-wrapper ul.category-list a:nth-child(3n) li {
+        margin-right: 2%;
+    }
+    .category-list-wrapper ul.category-list a:nth-child(odd) li {
+        margin-right: 2%;
+    }
+    .category-list-wrapper ul.category-list a:nth-child(even) li {
+        margin-right: 0;
+    }
+}
+
+
+/*small screen*/
+
+@media only screen and (max-width: 488px) {
+    .category-list-wrapper ul.category-list li {
+        width: 70% !important;
+        margin-left: 15% !important;
+        margin-right: 15% !important;
+        margin-bottom: 20px !important;
+        float: none;
+    }
+    .category-list-wrapper ul.category-list li img {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+    }
+}
+
+
+/*region-list from here */
+
+.region-list-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.region-list-wrapper h2 {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.region-list-wrapper .clearfix {
+    background-color: #fbf9f9;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+
+/*others*/
+
+.region-list-wrapper .continent {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    left: 0%;
+    top: 0%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.region-list-wrapper .wrap {
+    float: left;
+    width: 30% !important;
+    height: 30vh !important;
+    object-fit: cover;
+    margin-left: 2%;
+    margin-right: 1%;
+    top: 50%;
+}
+
+.region-list-wrapper .wrap img {
+    border-radius: 3px;
+}
+
+.region-list-wrapper ul.region-box {
+    width: 60%;
+}
+
+.region-list-wrapper ul.region-box li {
+    float: left;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    transition: all .2s linear;
+    text-decoration: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 0px 0px #CCC;
+    margin: 0 auto 50px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    position: relative;
+}
+
+.region-list-wrapper ul.region-box li:before {
+    content: none !important;
+}
+
+.region-list-wrapper ul.region-box li:hover {
+    background-color: #FDD5D5!important;
+    box-shadow: 0px 4px 0px 0px #F7B4B4!important;
+}
+
+.region-list-wrapper ul.region-box li div:hover {
+    background-color: #FDD5D5!important;
+    box-shadow: 0px 4px 0px 0px #F7B4B4!important;
+    border-radius: 3px;
+}
+
+.region-list-wrapper ul.region-box li button:hover {
+    background-color: #FDD5D5!important;
+    box-shadow: 0px 4px 0px 0px #F7B4B4!important;
+    border-radius: 3px;
+}
+
+
+/*large*/
+
+@media only screen and (min-width: 997px) {
+    .region-list-wrapper .wrap {
+        float: left;
+        width: 31% !important;
+        height: 45vh !important;
+        object-fit: cover;
+        margin: 0 auto 10px !important;
+        display: inline-block !important;
+        padding-left: 15px;
+        position: relative;
+        border-radius: 3px;
+    }
+    .region-list-wrapper .wrap img {
+        border-radius: 3px;
+        position: absolute;
+        width: 93% !important;
+        top: 25%;
+        left: 5%;
+    }
+    .region-list-wrapper ul.region-box {
+        float: right;
+        width: 67%;
+        margin-bottom: 20px !important;
+    }
+    .region-list-wrapper ul.region-box li:nth-child(odd) {
+        width: 45%;
+        margin-right: 2%;
+        margin-left: 3%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .region-list-wrapper ul.region-box li:nth-child(even) {
+        width: 45%;
+        margin-right: 2%;
+        margin-left: 3%;
+        margin-bottom: 15px !important;
+        text-align: center;
+    }
+}
+
+
+/*medium screen*/
+
+@media only screen and (max-width: 996px) {
+    .region-list-wrapper .wrap {
+        float: none;
+        width: 60% !important;
+        height: 100% !important;
+        margin: 0 auto 10px !important;
+        position: relative;
+        display: block;
+    }
+    .region-list-wrapper .wrap img {
+        border-radius: 3px;
+        object-fit: fill;
+    }
+    .region-list-wrapper ul.region-box {
+        float: left;
+        width: 100%;
+        display: block;
+        bottom: 0;
+    }
+    .region-list-wrapper ul.region-box li:nth-child(odd) {
+        width: 45.5%;
+        margin-right: 2%;
+        margin-left: 3%;
+        text-align: center;
+    }
+    .region-list-wrapper ul.region-box li:nth-child(even) {
+        width: 45.5%;
+        margin-right: 3%;
+        margin-left: 1%;
+        text-align: center;
+    }
+}
+
+
+/*small screen*/
+
+@media only screen and (max-width: 488px) {
+    .region-list-wrapper .wrap {
+        float: none;
+        width: 70% !important;
+        /* height: 30vh !important; */
+        object-fit: cover;
+        margin: 0 auto 20px !important;
+        position: relative;
+    }
+    .region-list-wrapper .wrap img {
+        border-radius: 3px;
+    }
+    .region-list-wrapper ul.region-box li {
+        width: 70% !important;
+        margin-left: 15% !important;
+        margin-right: 15% !important;
+        margin-bottom: 20px !important;
+        float: none;
+    }
+}
+
+
+/*country names*/
+
+.region-list-wrapper ul.region-box li .contents {
+    padding: 15px 15px 15px 55px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+
+/*country each */
+
+.region-list-wrapper ul.region-box li .japan {
+    background: url(images/country/japan.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .south-korea {
+    background: url(images/country/south-korea.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .hongkong {
+    background: url(images/country/hongkong.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .vietnam {
+    background: url(images/country/vietnam.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .taiwan {
+    background: url(images/country/taiwan.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .philippines {
+    background: url(images/country/philippines.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .nepal {
+    background: url(images/country/nepal.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .indonesia {
+    background: url(images/country/indonesia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .india {
+    background: url(images/country/india.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .sri-lanka {
+    background: url(images/country/sri-lanka.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .new-zealand {
+    background: url(images/country/new-zealand.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .china {
+    background: url(images/country/china.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .mongolia {
+    background: url(images/country/mongolia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .cambodia {
+    background: url(images/country/cambodia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .thailand {
+    background: url(images/country/thailand.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .australia {
+    background: url(images/country/australia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+
+/*Africa */
+
+.region-list-wrapper ul.region-box li .nigeria {
+    background: url(images/country/nigeria.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .ghana {
+    background: url(images/country/ghana.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .uganda {
+    background: url(images/country/uganda.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .togo {
+    background: url(images/country/togo.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .tanzania {
+    background: url(images/country/tanzania.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .south-africa {
+    background: url(images/country/south-africa.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .mozambique {
+    background: url(images/country/mozambique.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .morocco {
+    background: url(images/country/morocco.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .kenya {
+    background: url(images/country/kenya.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+
+/*America */
+
+.region-list-wrapper ul.region-box li .brazil {
+    background: url(images/country/brazil.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .bolivia {
+    background: url(images/country/bolivia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .colombia {
+    background: url(images/country/colombia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .costa-rica {
+    background: url(images/country/costa-rica.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .united-states-of-america {
+    background: url(images/country/united-states-of-america.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .honduras {
+    background: url(images/country/honduras.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .mexico {
+    background: url(images/country/mexico.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .ecuador {
+    background: url(images/country/ecuador.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .argentina {
+    background: url(images/country/argentina.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .canada {
+    background: url(images/country/canada.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .peru {
+    background: url(images/country/peru.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+
+/* Europe */
+
+.region-list-wrapper ul.region-box li .italy {
+    background: url(images/country/italy.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .iceland {
+    background: url(images/country/iceland.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .austria {
+    background: url(images/country/austria.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .united-kingdom {
+    background: url(images/country/united-kingdom.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .switzerland {
+    background: url(images/country/switzerland.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .sweden {
+    background: url(images/country/sweden.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .spain {
+    background: url(images/country/spain.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .slovakia {
+    background: url(images/country/slovakia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .russia {
+    background: url(images/country/russia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .poland {
+    background: url(images/country/poland.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .denmark {
+    background: url(images/country/denmark.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .moldova {
+    background: url(images/country/moldova.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .germany {
+    background: url(images/country/germany.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .france {
+    background: url(images/country/france.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .finland {
+    background: url(images/country/finland.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .united-kingdom-wales {
+    background: url(images/country/united-kingdom-wales.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .united-kingdom-scotland {
+    background: url(images/country/united-kingdom-scotland.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .portugal {
+    background: url(images/country/portugal.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .spain-catalunya {
+    background: url(images/country/spain-catalunya.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .belgium {
+    background: url(images/country/belgium.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .netherlands {
+    background: url(images/country/netherlands.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .czech-republic {
+    background: url(images/country/czech-republic.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .hungary {
+    background: url(images/country/hungary.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .serbia {
+    background: url(images/country/serbia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .greece {
+    background: url(images/country/greece.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .lithuania {
+    background: url(images/country/lithuania.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .lithuania {
+    background: url(images/country/lithuania.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .latvia {
+    background: url(images/country/latvia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .estonia {
+    background: url(images/country/estonia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .belarus {
+    background: url(images/country/belarus.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .ukraine {
+    background: url(images/country/ukraine.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .azerbaijan {
+    background: url(images/country/azerbaijan.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .armenia {
+    background: url(images/country/armenia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .turkey {
+    background: url(images/country/turkey.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .georgia {
+    background: url(images/country/georgia.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}
+
+.region-list-wrapper ul.region-box li .kyrgyzistan {
+    background: url(images/country/kyrgyzistan.png) no-repeat 10px 15px #fff;
+    background-size: 35px;
+}

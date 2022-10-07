@@ -1,0 +1,52 @@
+.pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #94B3AD;
+}
+
+.box,
+.box:before,
+.box:after,
+.box-body,
+.box-body:before {
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.box:before {
+    transform: rotate(22deg);
+    content: '';
+}
+
+.box:after {
+    transform: rotate(-22deg);
+    content: '';
+}
+
+.box-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.box-body:before {
+    transform: rotate(45deg);
+    content: '';
+    z-index: -1;
+}
+
+.box-body p {
+    padding: 0.2rem;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(255, 30, 30);
+    text-align: center;
+}
